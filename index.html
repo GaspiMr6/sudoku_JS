@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SudokuOnline</title>
+    <link rel="stylesheet" href="estiloindex.css">
+    <link rel="stylesheet" href="css/fontello.css">
+    <!-- Fuentes -->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+    <script src="js/scriptP3.js"></script>
+</head>
+<body>
+
+    <header id="sube">
+        <img src="https://images-na.ssl-images-amazon.com/images/I/71cg%2BfcdDdL.png" alt="logo">
+        <h1>SudokuOnline</h1>
+        <h2>El objetivo del juego es rellenar la cuadrícula sin fallos</h2>
+    </header>
+
+    <section class="sec1">
+        <h2>Juega al Sudoku</h2>
+        <p> Tamaño del tablero: 
+            <select onchange="redimensiona();" name="Tamaño" id="desplegable">
+                <option value="4">4</option>
+                <option value="9">9</option>
+            </select>
+        </p>
+        <div id="temp"></div>
+        <section id="numeros"><h2 hidden>SUDOKU</h2></section>
+        <br>
+        <canvas id="c1"></canvas>
+
+        <br>
+        <div class="botoncitos">
+            <button onclick="empieza();">Empezar partida</button>
+        </div>
+    </section>
+    <script>preparaCanvas();</script>
+    <script>sessionStorage['bool_marcado'] = false;</script>
+    <script>redimensiona();</script>
+    <footer>
+   
+        <div id="flec"></div>
+        <p>&copy; PCW <time datetime="2020-02">Febrero de 2020</time>   SudokuOnline</p>
+        <a href="index.html">Inicio</a>
+        <a href="acerca.html">Información de contacto</a>
+    </footer>
+</body>
+</html>
