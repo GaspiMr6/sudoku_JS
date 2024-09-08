@@ -1,2 +1,2 @@
 # sudoku_JS
-Juego de Sudoku hecho en JavaScript, HTML y CSS
+Sudoku game made with JavaScript, HTML y CSS
